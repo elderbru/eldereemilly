@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(90deg, rgb(38, 85, 42), rgb(57, 82, 48));
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    position: relative;
+    background-color: rgb(14, 19, 15);
+    min-width: 30vw;
+    min-height: 60vh;
+    padding: 2rem;
+    box-shadow: 2px 7px 14px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+main h2 {
+    font-weight: 600;
+    margin-bottom: 4rem;
+    margin-left: 0.5rem;
+    position: relative;
+    left: 4.5vh;
+    top: 1.5vh;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input[type="submit"] {
+    background: linear-gradient(45deg, rgb(64, 100, 48), rgb(46, 144, 15));
+    margin-top: 1rem;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 2rem;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+form input[type="submit"]:hover {
+    background-color: #37b437;
+    transition: 0.5s;
+}
+.container img {
+    width: 5vh;
+    height: 5.5vh;
+    position: absolute;
+}
+main form input{
+    position: relative;
+    width: 100%;
+    height: 2.3rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 0.2px solid rgba(0, 0, 0, 0.3);
+    padding: 1vh;
+}
+main form input:hover {
+    background-color: rgb(226, 218, 218);
+}
+main form label {
+    font-size: 0.9rem;
+    color: white;
+    padding-bottom: 0.4rem;
+}
+.bodyinicial {
+    background: linear-gradient(45deg, rgb(30, 100, 40), rgb(25, 107, 46));
+    display: -webkit-box;
+}
+.menu {
+    position: absolute;
+    background-color: rgb(14, 19, 15);
+    min-width: 10vw;
+    min-height: 100vh;
+    transition: all 0.5s;
+    border-radius: 0px;
+    left: -20vw;
+}
+.menu ul li {
+    display: block;
+    padding-top: 1rem;
+    font-weight: 600;
+}
+.menu ul li a {
+    color: rgba(255, 255, 255, 0.5);
+}
+.menu ul li ul {
+    padding: 0.6rem 0.5rem;
+    font-weight: 300;
+    display: none;
+}
+.menu ul, li {
+    color: rgba(255, 255, 255, 0.5);
+}
+.menu ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+.menu ul li a:hover {
+    color: white;
+}
+.menu ul li ul li {
+    padding: 0rem;
+}
+.menu ul li ul li a {
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    padding: 0.5rem;
+}
+.menu ul li ul li a:hover {
+    background-color: rgb(25, 32, 26);
+}
+.menu ul li ul li a:hover {
+    color: white;
+}
+input[type="checkbox"] {
+    display: none;
+}
+.labelcheck {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    z-index: +1;
+    left: 2rem;
+}
+.labelcheck:hover {
+    color: white;
+}
+input[type="checkbox"]:checked ~ .menu {
+    transform: translateX(20vw);
+}
+input[type="checkbox"]:checked ~ .infos {
+    left: 11rem;
+    transition: all 0.5s;
+}
+input[type="checkbox"]:checked ~ .infos2 {
+    left: 46rem;
+    transition: all 0.5s;
+}
+.menu ul li:hover > ul {
+    display: block;
+}
+.barra {
+    border-top: 1px solid rgba(255,255,255,.15);
+    margin-top: 1rem;
+}
+.barramenu {
+    width: 6.5vw;
+    height: 100vh;
+    background-color: rgb(14, 19, 15);
+}
+.cabecalhoinicial {
+    position: relative;
+    width: 93.5vw;
+    height: 12vh;
+    background-color: rgb(10, 19, 15);
+    box-shadow: 2px 7px 14px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+.infos {
+    background-color: rgb(226, 226, 226);
+    min-width: 40vw;
+    min-height: 80vh;
+    transition: 0s;
+    border-radius: 10px;
+    top: 6rem;
+    left: 6rem;
+    z-index: -1;
+    position: absolute;
+    transition: all 0.5s;
+}
+.infos2 {
+    left: 41rem;
+}
+.infos3{
+	left:50%;
+	transform: translateX(-50%);
+	z-index:1;
+	width:60%;
+}
+header img {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+}
+header h2 {
+    font-weight: 600;
+    position: absolute;
+    left: 12rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+.eplantnome {
+    left: 4.3rem;
+    top: 50%;
+    transform: translateY(-30%);
+}
+.cabecalhonovo {
+    height: 10vh;
+}
+.bodycadastro {
+    background: linear-gradient(60deg, rgb(31, 75, 31), rgb(28, 134, 39));
+    display: -webkit-box;
+}
+.cadastro {
+    top: 5rem;
+    left: 17rem;
+    min-width: 50vw;
+    min-height: 10vh;
+    height: 85vh;
+    transition: 0s;
+    background-color: rgb(226, 226, 226);
+    transition: 0s;
+    border-radius: 10px;
+    position: absolute;
+}
+.cadastro label {
+    padding: 0;
+}
+.cadastro input {
+    height: 2rem;
+}
+.cadastrar label {
+    color: black;
+}
+.cadastrar input[type="submit"] {
+    cursor: pointer;
+}
+.cadastrar input:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.endereco {
+    font-weight: 600;
+}
+#fotomain {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 35rem;
+    left: 1rem;
+}
+.botaocadastrar {
+    top: -1.5rem;
+}
+.caixinhas {
+	position: absolute;
+	width:1px;
+}
